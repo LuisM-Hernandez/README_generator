@@ -1,0 +1,27 @@
+{
+  "name": "readme.generator",
+  "version": "1.0.0",
+  "description": "An application that will prompt the user questions and generate a README according to their answers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Hernandez",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisM-Hernandez/README_generator.git"
+  },
+  "keywords": [
+    "readme",
+    "generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/LuisM-Hernandez/README_generator/issues"
+  },
+  "homepage": "https://github.com/LuisM-Hernandez/README_generator#readme"
+}
