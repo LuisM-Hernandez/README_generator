@@ -8,6 +8,18 @@ const writeChoices = require('./utils/generateMarkdown');
 const questions = [{
 
     type: "input",
+    name: "title",
+    message: "What is the title for the project?",
+    
+},
+{
+    type: "input",
+    name: "description",
+    message: "Please write a short description of your project",
+    
+},
+{
+    type: "input",
     name: "github",
     message: "What is your Github username?",
 },
@@ -15,16 +27,6 @@ const questions = [{
     type: "input",
     name: "email",
     message: "What is your email address?",
-},
-{
-    type: "input",
-    name: "title",
-    message: "What is the title?",
-},
-{
-    type: "input",
-    name: "description",
-    message: "Please write a short description of your project",
 },
 {
     type: "list",
