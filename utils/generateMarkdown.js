@@ -105,12 +105,17 @@ function writeChoices(data) {
 
   ## Table of Content
   
-  1. [Installation]
-  2. [Tests]
-  3. [Usage]
+  1. [Usage]
+  2. [Installation]
+  3. [Tests]
   4. [License]
   5. [Contributing]
   6. [Questions]
+
+  ## Usage
+  ${badticks}
+  ${data.usage}
+  ${badticks}
 
 
   ## Installation
@@ -118,11 +123,6 @@ function writeChoices(data) {
   ${data.installation}
   ${badticks}
 
-
-  ## Usage
-  ${badticks}
-  ${data.usage}
-  ${badticks}
 
   ## Test
   ${badticks}
