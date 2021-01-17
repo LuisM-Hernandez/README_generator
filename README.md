@@ -1,6 +1,6 @@
-# README Gen
+# README Generator
 
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
   
@@ -9,14 +9,14 @@
 
 
   ## Table of Content
-  
+  ```
   1. [Installation]
   2. [Tests]
   3. [Usage]
   4. [License]
   5. [Contributing]
   6. [Questions]
-  
+  ```
 
   ## Installation
   ```
@@ -35,7 +35,8 @@
   ```
 
   ## Contributing
-  Users cannot contribute to this repo
+  
+  No contribution to this repo
 
   ## Contact
 
@@ -45,7 +46,7 @@
 
 ## License
 
-    This project is licensed under the MIT license.
+  This project is licensed under the Apache license.
 
-    
+  
 

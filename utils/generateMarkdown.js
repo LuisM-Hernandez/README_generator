@@ -3,13 +3,12 @@
 const badticks = "```"
 function getLicenseBadge(license) {
 
-  //Need fix: After first try it still comes up the same badge with different choice attributes
   if(license === "MIT"){
-    return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
   }
 
  else if(license === "APACHE 2.0"){
-    return "![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)";
+    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
   }
   else if(license === "GPL 3.0"){
     return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
@@ -87,7 +86,7 @@ function getLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// This function generates the markdown for the README.md file
 function writeChoices(data) {
 
   const badge = getLicenseBadge(data.license);
