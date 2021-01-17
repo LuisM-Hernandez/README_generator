@@ -104,14 +104,14 @@ function writeChoices(data) {
 
 
   ## Table of Content
-  ${badticks}
+  
   1. [Installation]
   2. [Tests]
   3. [Usage]
   4. [License]
   5. [Contributing]
   6. [Questions]
-  ${badticks}
+
 
   ## Installation
   ${badticks}
