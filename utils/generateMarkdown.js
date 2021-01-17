@@ -1,9 +1,9 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// This function returns a license badge based on which license is chosen in
+// If there is no license it will return an empty string
 const badticks = "```"
 function getLicenseBadge(license) {
 
-  //Need to fix after first try it still comes up the same bade with different choice
+  //Need fix: After first try it still comes up the same badge with different choice attributes
   if(license === "MIT"){
     return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
   }
@@ -22,8 +22,8 @@ function getLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//  This function returns the license link
+// If no license was chosen, return an empty string
 function getLicenseLink(license) {
 
   if(license === "MIT"){
@@ -45,8 +45,8 @@ function getLicenseLink(license) {
 
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// This function returns the license section of README
+// Return an empty string if no license was chosen
 function getLicenseSection(license) {
 
   if(license === "MIT"){
@@ -104,7 +104,7 @@ function writeChoices(data) {
   ${data.description}
 
 
-  ### Table of Content
+  ## Table of Content
   ${badticks}
   1. [Installation]
   2. [Tests]
@@ -126,16 +126,18 @@ function writeChoices(data) {
   ${badticks}
 
   ## Test
+  ${badticks}
   ${data.test}
+  ${badticks}
 
   ## Contributing
   ${data.contributing}
 
   ## Contact
-  ${badticks}
-  Email:${data.email}
-  GitHub: https://github.com/${data.github}
-  ${badticks}
+
+  If you have any questions about this repository, open an issue or contact me directly at ${data.email}. 
+  
+  You can find more of my work at https://github.com/${data.github}
 
 ${section}
 
