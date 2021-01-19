@@ -10,17 +10,13 @@
 
   ## Table of Content
   ```
-  1. [Installation]
-  2. [Tests]
-  3. [Usage]
+  1. [Usage]
+  2. [Installation]
+  3. [Tests]
   4. [License]
   5. [Contributing]
-  6. [Questions]
-  ```
-
-  ## Installation
-  ```
-  npm i inquirer
+  6. [Contact]
+  7. [License]
   ```
 
 
@@ -29,10 +25,20 @@
   Use git clone to get the repo and follow the instructions provided on the README.md
   ```
 
+  ## Installation
+  ```
+  npm i inquirer
+  ```
+
   ## Test
   ```
-  To run tests run the following comman: node index.js
+  To run tests run the following command: node index.js
   ```
+
+  ## Links
+
+  App functionality video: [Readme_Gen Video](https://drive.google.com/file/d/158hnEWl71NLtTSHnIlCz5LWEhc22WH2U/view?usp=sharing)
+
 
   ## Contributing
   
