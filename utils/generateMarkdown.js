@@ -1,52 +1,39 @@
 // This function returns a license badge based on which license is chosen in
 // If there is no license it will return an empty string
 const badticks = "```"
-function getLicenseBadge(license) {
+const getLicenseBadge = license => {
 
-  if(license === "MIT"){
-    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
-  }
+ if(license === "MIT") return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+  
+ else if(license === "APACHE 2.0") return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
 
- else if(license === "APACHE 2.0"){
-    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
-  }
-  else if(license === "GPL 3.0"){
-    return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
-  }
- else if(license === "BSD 3"){
-    return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]";
-  }
-  else if(license === "NONE"){
-    return "";
-  }
+ else if(license === "GPL 3.0") return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
+
+ else if(license === "BSD 3") return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]";
+  
+else if(license === "NONE")  return "";
+  
 }
 
 //  This function returns the license link
 // If no license was chosen, return an empty string
-function getLicenseLink(license) {
+const getLicenseLink = license => {
 
-  if(license === "MIT"){
-     return "(https://opensource.org/licenses/MIT)";
-  }
+ if(license === "MIT") return "(https://opensource.org/licenses/MIT)";
 
- else if(license === "APACHE 2.0"){
-    return "(https://opensource.org/licenses/Apache-2.0)";
-  }
-  else if(license === "GPL 3.0"){
-    return "(https://www.gnu.org/licenses/gpl-3.0)";
-  }
- else if(license === "BSD 3"){
-    return "(https://opensource.org/licenses/BSD-3-Clause)";
-  }
-  else if(license === "NONE"){
-    return "";
-  }
+ else if(license === "APACHE 2.0") return "(https://opensource.org/licenses/Apache-2.0)";
+  
+ else if(license === "GPL 3.0") return "(https://www.gnu.org/licenses/gpl-3.0)";
 
+ else if(license === "BSD 3") return "(https://opensource.org/licenses/BSD-3-Clause)";
+
+ else if(license === "NONE") return "";
+  
 }
 
 // This function returns the license section of README
 // Return an empty string if no license was chosen
-function getLicenseSection(license) {
+const getLicenseSection = license => {
 
   if(license === "MIT"){
     return `## License
@@ -87,7 +74,7 @@ function getLicenseSection(license) {
 }
 
 // This function generates the markdown for the README.md file
-function writeChoices(data) {
+const writeChoices = data => {
 
   const badge = getLicenseBadge(data.license);
   const link = getLicenseLink(data.license)
