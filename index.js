@@ -69,10 +69,9 @@ function init() {
     data ="";
     inquirer.prompt(questions).then((response) => {
         console.log('Generating README...');
-        generateREADme('README.md', writeChoices({...response}));
+        generateREADme('README_Gen.md', writeChoices({...response}));
     });
 }
-
 
 // Function call to initialize app
 init();

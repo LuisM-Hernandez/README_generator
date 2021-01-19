@@ -77,12 +77,12 @@ const getLicenseSection = license => {
 const writeChoices = data => {
 
   const badge = getLicenseBadge(data.license);
-  const link = getLicenseLink(data.license)
+  const links = getLicenseLink(data.license)
   const section = getLicenseSection(data.license);
 
   return `# ${data.title}
 
-  ${badge}${link}
+  ${badge}${links}
 
   ## Description
   
